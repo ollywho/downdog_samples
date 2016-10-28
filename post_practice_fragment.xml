@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/blurred_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"/>
+
+    <com.downdogapp.widget.AvenirTextView
+        android:id="@+id/title_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="32dp"
+        android:textSize="30sp"
+        android:text="Namaste"/>
+
+    <com.downdogapp.widget.AvenirTextView
+        android:id="@+id/content_label"
+        android:layout_width="280dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/title_label"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40dp"
+        android:textAlignment="center"
+        android:textSize="18sp"
+        android:text="Thank you for practicing with Down Dog!"/>
+
+    <LinearLayout
+        android:id="@+id/rating_container"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:translationY="-50dp"
+        android:orientation="vertical">
+
+        <com.downdogapp.widget.AvenirTextView
+            android:id="@+id/rating_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:textAlignment="center"
+            android:textSize="18sp"
+            android:text="Rate your practice"/>
+
+        <LinearLayout
+            android:id="@+id/stars_container"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:orientation="horizontal">
+
+            <ImageButton
+                android:id="@+id/star_0"
+                android:layout_width="42dp"
+                android:layout_height="42dp"
+                android:background="@android:color/transparent"
+                android:src="@drawable/star"/>
+
+            <ImageButton
+                android:id="@+id/star_1"
+                android:layout_width="42dp"
+                android:layout_height="42dp"
+                android:background="@android:color/transparent"
+                android:src="@drawable/star"/>
+
+            <ImageButton
+                android:id="@+id/star_2"
+                android:layout_width="42dp"
+                android:layout_height="42dp"
+                android:background="@android:color/transparent"
+                android:src="@drawable/star"/>
+
+            <ImageButton
+                android:id="@+id/star_3"
+                android:layout_width="42dp"
+                android:layout_height="42dp"
+                android:background="@android:color/transparent"
+                android:src="@drawable/star"/>
+
+            <ImageButton
+                android:id="@+id/star_4"
+                android:layout_width="42dp"
+                android:layout_height="42dp"
+                android:background="@android:color/transparent"
+                android:src="@drawable/star"/>
+        </LinearLayout>
+    </LinearLayout>
+
+    <com.downdogapp.widget.AvenirTextView
+        android:id="@+id/continue_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="32dp"
+        android:textAlignment="center"
+        android:textSize="24sp"
+        android:text="Continue"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:translationY="120dp"
+        android:orientation="vertical">
+
+        <com.downdogapp.widget.AvenirTextView
+            android:id="@+id/feedback_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:textSize="20sp"
+            android:text="Send Feedback"/>
+
+        <com.downdogapp.widget.AvenirTextView
+            android:id="@+id/playlist_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="2dp"
+            android:textSize="20sp"
+            android:text="View Playlist"/>
+
+        <com.downdogapp.widget.AvenirTextView
+            android:id="@+id/facebook_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="2dp"
+            android:textSize="20sp"
+            android:text="Share to Facebook"/>
+
+        <com.downdogapp.widget.AvenirTextView
+            android:id="@+id/membership_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="2dp"
+            android:textSize="20sp"
+            android:text="Become a Member"/>
+    </LinearLayout>
+</RelativeLayout>

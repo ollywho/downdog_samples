@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/blurred_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"/>
+
+    <com.downdogapp.widget.AvenirTextView
+        android:id="@+id/cancel_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        android:paddingBottom="12dp"
+        android:paddingTop="22dp"
+        android:textSize="24sp"
+        android:text="Cancel"/>
+
+    <LinearLayout
+        android:id="@+id/button_container"
+        android:layout_width="match_parent"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/cancel_button"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/play_store_view"
+            android:layout_width="match_parent"
+            android:layout_height="54dp"
+            android:orientation="vertical">
+
+            <com.downdogapp.widget.AvenirTextView
+                android:id="@+id/play_store_button"
+                android:layout_width="match_parent"
+                android:layout_height="52dp"
+                android:textSize="18sp"
+                android:text="Open in Play Store"
+                android:textAlignment="textStart"
+                android:paddingStart="8dp"
+                android:paddingTop="10dp"/>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:background="@android:color/white"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/itunes_view"
+            android:layout_width="match_parent"
+            android:layout_height="54dp"
+            android:orientation="vertical">
+
+            <com.downdogapp.widget.AvenirTextView
+                android:id="@+id/itunes_button"
+                android:layout_width="match_parent"
+                android:layout_height="52dp"
+                android:textSize="18sp"
+                android:text="Open in iTunes"
+                android:textAlignment="textStart"
+                android:paddingStart="8dp"
+                android:paddingTop="10dp"/>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:background="@android:color/white"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/spotify_view"
+            android:layout_width="match_parent"
+            android:layout_height="54dp"
+            android:orientation="vertical">
+
+            <com.downdogapp.widget.AvenirTextView
+                android:id="@+id/spotify_button"
+                android:layout_width="match_parent"
+                android:layout_height="52dp"
+                android:textSize="18sp"
+                android:text="Open in Spotify"
+                android:textAlignment="textStart"
+                android:paddingStart="8dp"
+                android:paddingTop="10dp"/>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:background="@android:color/white"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/amazon_view"
+            android:layout_width="match_parent"
+            android:layout_height="54dp"
+            android:orientation="vertical">
+
+            <com.downdogapp.widget.AvenirTextView
+                android:id="@+id/amazon_button"
+                android:layout_width="match_parent"
+                android:layout_height="52dp"
+                android:textSize="18sp"
+                android:text="Open in Amazon"
+                android:textAlignment="textStart"
+                android:paddingStart="8dp"
+                android:paddingTop="10dp"/>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:background="@android:color/white"/>
+        </LinearLayout>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="63dp"
+        android:layout_above="@id/button_container">
+
+        <ImageView
+            android:layout_width="52dp"
+            android:layout_height="52dp"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="24dp"
+            android:layout_marginBottom="9dp"
+            android:src="@android:color/white"/>
+
+        <ImageView
+            android:id="@+id/artwork"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="25dp"
+            android:layout_marginTop="1dp"/>
+        
+        <com.downdogapp.widget.AvenirTextView
+            android:id="@+id/song_title"
+            android:layout_width="210dp"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@id/artwork"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="-3dp"
+            android:ellipsize="marquee"
+            android:singleLine="true"
+            android:textAlignment="viewStart"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:text="Song Title"/>
+
+        <com.downdogapp.widget.AvenirTextView
+            android:id="@+id/artist"
+            android:layout_width="210dp"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@id/artwork"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="15dp"
+            android:layout_marginBottom="13dp"
+            android:ellipsize="marquee"
+            android:singleLine="true"
+            android:textAlignment="viewStart"
+            android:textSize="14sp"
+            android:text="Artist"/>
+
+        <com.downdogapp.widget.WhiteImageButton
+            android:id="@+id/preview_button"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginEnd="17dp"
+            android:layout_alignParentEnd="true"
+            android:src="@drawable/preview_play_button"/>
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:layout_alignParentBottom="true"
+            android:background="@android:color/white"/>
+        
+    </RelativeLayout>
+</RelativeLayout>

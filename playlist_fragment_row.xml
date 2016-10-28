@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="72dp">
+    <ImageView
+        android:id="@+id/artwork_border"
+        android:layout_width="52dp"
+        android:layout_height="52dp"
+        android:layout_marginStart="23dp"
+        android:layout_marginEnd="14dp"
+        android:layout_alignParentStart="true"
+        android:layout_centerVertical="true"
+        android:translationY="-1dp"
+        android:src="@android:color/white"/>
+
+    <ImageView
+        android:id="@+id/artwork"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="24dp"
+        android:layout_alignParentStart="true"
+        android:layout_centerVertical="true"
+        android:translationY="-1dp"/>
+
+    <com.downdogapp.widget.AvenirTextView
+        android:id="@+id/song_title"
+        android:layout_width="210dp"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@id/artwork_border"
+        android:layout_alignTop="@id/artwork"
+        android:translationY="-3dp"
+        android:ellipsize="marquee"
+        android:singleLine="true"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:text="Song Title"/>
+
+    <com.downdogapp.widget.AvenirTextView
+        android:id="@+id/artist"
+        android:layout_width="210dp"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@id/artwork_border"
+        android:layout_alignBottom="@id/artwork"
+        android:translationY="-3dp"
+        android:ellipsize="marquee"
+        android:singleLine="true"
+        android:textSize="14sp"
+        android:text="Artist"/>
+
+    <ImageView
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_centerVertical="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="11dp"
+        android:src="@drawable/start_down_arrow"/>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_alignParentBottom="true"
+        android:src="@android:color/white"/>
+</RelativeLayout>
